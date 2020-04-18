@@ -12,15 +12,11 @@ async function quickstart(fileName) {
 
   //document_text_detection
   //const detections = result.textAnnotations;
-  const detections = result;
-  const a = detections.textAnnotations[0].description
-  console.log(a)
+  //const detections = result;
+  //const a = detections.textAnnotations[0].description
+  //console.log(a)
   //console.log(detections.fullTextAnnotation.pages[0].blocks[0].paragraphs[0].words[0].symbols[0].text)
   //console.log('Text:');
-
-  detections.textAnnotations.forEach(text => console.log(text));
-
-
   //const [result] = await client.textDetection(fileName);
   //const detections = result.textAnnotations;
   //console.log('Text:');
@@ -30,6 +26,15 @@ async function quickstart(fileName) {
   // const labels = result.labelAnnotations;
   // console.log('Labels:');
   // labels.forEach(label => console.log(label.description));
+
+  const textCoordinates = {}
+  const detections = result.textAnnotations;
+
+  detections.forEach(text => {
+    //console.log(text)
+    console.log(text.description)
+    console.log(text.boundingPoly)
+  });
 }
 
 quickstart('SP229975_0.jpg')
