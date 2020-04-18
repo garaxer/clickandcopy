@@ -1,0 +1,1715 @@
+{
+  faceAnnotations: [],
+  landmarkAnnotations: [],
+  logoAnnotations: [],
+  labelAnnotations: [],
+  textAnnotations: [
+    {
+      locations: [],
+      properties: [],
+      mid: '',
+      locale: 'en',
+      description: 'Land Title Act 1994; Land Act 1994\n' +
+        'Form 21 Version 2\n' +
+        'SURVEY PLAN\n' +
+        'Sheet\n' +
+        'of\n' +
+        '4\n' +
+        'REFERENCE MARKS\n' +
+        'PERMANENT MARKS\n' +
+        'STN\n' +
+        'TO\n' +
+        'ORIGIN\n' +
+        'BEARING\n' +
+        'DIST\n' +
+        'PM\n' +
+        'ORIGIN\n' +
+        'BEARING DIST\n' +
+        'NO\n' +
+        'O Screw in Kerb\n' +
+        'O Nail in Conc\n' +
+        'O Screw in Rock\n' +
+        'O Nail in Manhole\n' +
+        'O GI Nail in Bit\n' +
+        'O Screw in Kerb\n' +
+        '127 0 Screw in Conc Barrier|127/DP229963\n' +
+        'OD Hole in Conc\n' +
+        'OD Hole in Conc\n' +
+        'O Nail in Conc\n' +
+        '19/DP229943\n' +
+        '71/SP229944\n' +
+        '72/DP229963\n' +
+        '72/DP229963\n' +
+        '99/DP229963\n' +
+        '123/SP229944\n' +
+        '19\n' +
+        "199°41'\n" +
+        "102°34'\n" +
+        '95-OPM | 95/DP229963 | 257°40ʻ15"\n' +
+        '96-OPM | 96/DP229963\n' +
+        `123–OPM | 123/SP229944 | 166°45'40"\n` +
+        '3.523\n' +
+        '44-661\n' +
+        '177831\n' +
+        '71\n' +
+        '7.025\n' +
+        "47°32'\n" +
+        '17:761\n' +
+        '139786\n' +
+        '72\n' +
+        "9°09'\n" +
+        '4.065\n' +
+        '22.8\n' +
+        '139683\n' +
+        '72\n' +
+        "9°22'\n" +
+        '14.158\n' +
+        '99\n' +
+        "206°42'\n" +
+        '13-598\n' +
+        '|123\n' +
+        "189°04'\n" +
+        "47°32'\n" +
+        '3.676\n' +
+        '5.25\n' +
+        '132\n' +
+        '|202\n' +
+        '203\n' +
+        '370\n' +
+        '132/DP229963\n' +
+        "202/SP229966 257°25'\n" +
+        '203/SP229966\n' +
+        '|370/SP229944\n' +
+        'Original information compiled from SP198683, SP229946, RP152648,\n' +
+        '& SP229966 in the Department of Environment\n' +
+        'and Resource Management.\n' +
+        "202°27'\n" +
+        '13.45\n' +
+        '0:2\n' +
+        "193°38'\n" +
+        '0:803\n' +
+        'OD Hole in Conc\n' +
+        "52°10'\n" +
+        '0:34\n' +
+        '370 Screw in Conc Barrier\n' +
+        'D Hole in Conc\n' +
+        'O Screw in Conc\n' +
+        "139°40'\n" +
+        '6.15\n' +
+        '0:212\n' +
+        'Peg placed at all subject corners,\n' +
+        'unless otherwise stated.\n' +
+        '395\n' +
+        '396\n' +
+        '397\n' +
+        '398\n' +
+        '399\n' +
+        '399\n' +
+        '400\n' +
+        "215°39'\n" +
+        "389/SP229944 229°33'\n" +
+        '0:75\n' +
+        'New Conn\n' +
+        'Screw in Conc\n' +
+        "49°29'\n" +
+        '2:46\n' +
+        'D Hole in Conc\n' +
+        'O Screw in Conc\n' +
+        'O Nail in Parapet\n' +
+        'O Screw in Conc\n' +
+        '4010 Screw in Conc Barrier 122/DP229963\n' +
+        "234°03'\n" +
+        '0-128\n' +
+        '391/SP229944\n' +
+        '391/SP229944\n' +
+        '390/SP229944\n' +
+        "49°21'\n" +
+        '0:75\n' +
+        '2-895\n' +
+        'New Conn\n' +
+        'New Conn\n' +
+        'Reserved plan of survey under section 65(4)(i) of the\n' +
+        'Survey & Mapping Infrastructure Act 2003.\n' +
+        "234°58'\n" +
+        "229°12'\n" +
+        '0:75\n' +
+        'New Conn\n' +
+        "49°36'\n" +
+        '1:196\n' +
+        'New Conn\n' +
+        '402\n' +
+        '545\n' +
+        '547\n' +
+        'Nail in Conc Barrier\n' +
+        "218°0'\n" +
+        '5:378\n' +
+        "545/SP229966 246°30'\n" +
+        '547/SP229966\n' +
+        'OD Hole in Conc\n' +
+        'OD Hole in Conc\n' +
+        '600 Screw in Conc Barrier\n' +
+        'I Pin\n' +
+        'Screw in Kerb\n' +
+        'Screw in Conc\n' +
+        '0:842\n' +
+        '0.919\n' +
+        "241°26'\n" +
+        "230°|l'\n" +
+        '1:274\n' +
+        '601\n' +
+        'SP158926\n' +
+        "165°34'\n" +
+        "359°12'\n" +
+        '2-676\n' +
+        '602\n' +
+        '603\n' +
+        '604\n' +
+        '605\n' +
+        '|606\n' +
+        '607\n' +
+        '608\n' +
+        '|609\n' +
+        'DP229949\n' +
+        'DP229906\n' +
+        '2:116\n' +
+        "309°59'\n" +
+        '0-711\n' +
+        '3.166\n' +
+        '4.062\n' +
+        'Nail in Conc Barrier\n' +
+        "60°04'\n" +
+        'Lot 447\n' +
+        'on SL8469\n' +
+        'Screw in Conc\n' +
+        "97°33'\n" +
+        'GI Nail in Bit\n' +
+        "257°31'\n" +
+        '0-806\n' +
+        'D Hole in Conc\n' +
+        'D Hole in Conc\n' +
+        'Nail in Conc\n' +
+        "277°35'\n" +
+        '0-936\n' +
+        'DP229971\n' +
+        "269°05'\n" +
+        '0-935\n' +
+        "159°41'\n" +
+        '0:477\n' +
+        '62\n' +
+        'SP198683\n' +
+        'ŞP229966 * ESA 99\n' +
+        'POR 433\n' +
+        'Enoggera\n' +
+        '80\n' +
+        '23\n' +
+        '7어\n' +
+        'SP229944\n' +
+        '75\n' +
+        'SP229966\n' +
+        'Emt C\n' +
+        'SP221420\n' +
+        'MI\n' +
+        '21\n' +
+        'SP229944\n' +
+        '72\n' +
+        '370\n' +
+        '63\n' +
+        'SP221420\n' +
+        'SP229966\n' +
+        'DP221422\n' +
+        '74\n' +
+        'DP229947\n' +
+        'ô4\n' +
+        '78\n' +
+        'SP229966\n' +
+        '96,\n' +
+        'RP92589\n' +
+        'DP229969\n' +
+        'SP229944\n' +
+        'ESA I0!\n' +
+        '73-\n' +
+        'Emt D\n' +
+        'SP221420\n' +
+        'Emt B\n' +
+        'RP142244\n' +
+        '71\n' +
+        '77\n' +
+        '79\n' +
+        'RP9923\n' +
+        '72\n' +
+        'Building\n' +
+        '123\n' +
+        'Emt A\n' +
+        'DP229943\n' +
+        'CAMPBELL\n' +
+        '95\n' +
+        '112\n' +
+        '68\n' +
+        'STREET\n' +
+        'DP229921\n' +
+        'LandPartners Limited (ACN I18 146 008) hereby certify that the\n' +
+        'land comprised in this plan was surveyed by the corporation, by\n' +
+        'Ian Stewart BREDDIN, surveying graduate and Ilka SCHOENEFUSS,\n' +
+        'surveying graduate for whose work the corporation accepts\n' +
+        'responsibility, under the supervision of Roland Pi-is ODSEY,\n' +
+        'cadastral surveyor and that the plan is accurate, that the said\n' +
+        'survey was performed in accordance with the Survey and Mapping\n' +
+        'Infrastructure Act 2003 and Surveyors Act 2003 and associated\n' +
+        'Regulations and Standards and that the said survey was completed\n' +
+        'on 25/03/2010.\n' +
+        'Om\n' +
+        '62-5m\n' +
+        '125m\n' +
+        '187:5m\n' +
+        '|0\n' +
+        '50|mm\n' +
+        '100 |mm\n' +
+        '150 |mm\n' +
+        'State copyright reserved.\n' +
+        'Plan 71-80\n' +
+        'of Lots\n' +
+        '1:1250\n' +
+        'Scale:\n' +
+        'Format: STANDARD\n' +
+        'LIMITED\n' +
+        'Aloten\n' +
+        'Cancelling Lot 20 on SP229944, Lot 30 on SP229946\n' +
+        '& Lot 60 on SP229966\n' +
+        'The\n' +
+        'Common\n' +
+        'Director\n' +
+        'Seal\n' +
+        'Switer\n' +
+        'SP229975\n' +
+        'Director\n' +
+        'of\n' +
+        'PARISH: NORTH BRISBANE COUNTY: Stanley\n' +
+        'Plan Status:\n' +
+        '25\n' +
+        'Date\n' +
+        'Meridian: DP229963\n' +
+        "F/N's: Vide SP229944\n" +
+        'SHEET\n' +
+        'SEE\n' +
+        'Creek\n' +
+        'Emt A\n' +
+        'ROAD\n' +
+        'ACN\n' +
+        'RP9924\n' +
+        '118:146\n' +
+        '446\n' +
+        'POR,\n' +
+        'DP229963 ROAD DP229945\n' +
+        'SHEET\n' +
+        'SEE\n' +
+        'ROAD\n' +
+        'Emt E\n' +
+        'SP221420\n' +
+        'BRJD4253.002-053D\n' +
+        '425302HG\n',
+      score: 0,
+      confidence: 0,
+      topicality: 0,
+      boundingPoly: [Object]
+    },
+    {
+      locations: [],
+      properties: [],
+      mid: '',
+      locale: '',
+      description: 'Land',
+      score: 0,
+      confidence: 0,
+      topicality: 0,
+      boundingPoly: [Object]
+    },
+    {
+      locations: [],
+      properties: [],
+      mid: '',
+      locale: '',
+      description: 'Title',
+      score: 0,
+      confidence: 0,
+      topicality: 0,
+      boundingPoly: [Object]
+    },
+    {
+      locations: [],
+      properties: [],
+      mid: '',
+      locale: '',
+      description: 'Act',
+      score: 0,
+      confidence: 0,
+      topicality: 0,
+      boundingPoly: [Object]
+    },
+    {
+      locations: [],
+      properties: [],
+      mid: '',
+      locale: '',
+      description: '1994;',
+      score: 0,
+      confidence: 0,
+      topicality: 0,
+      boundingPoly: [Object]
+    },
+    {
+      locations: [],
+      properties: [],
+      mid: '',
+      locale: '',
+      description: 'Land',
+      score: 0,
+      confidence: 0,
+      topicality: 0,
+      boundingPoly: [Object]
+    },
+    {
+      locations: [],
+      properties: [],
+      mid: '',
+      locale: '',
+      description: 'Act',
+      score: 0,
+      confidence: 0,
+      topicality: 0,
+      boundingPoly: [Object]
+    },
+    {
+      locations: [],
+      properties: [],
+      mid: '',
+      locale: '',
+      description: '1994',
+      score: 0,
+      confidence: 0,
+      topicality: 0,
+      boundingPoly: [Object]
+    },
+    {
+      locations: [],
+      properties: [],
+      mid: '',
+      locale: '',
+      description: 'Form',
+      score: 0,
+      confidence: 0,
+      topicality: 0,
+      boundingPoly: [Object]
+    },
+    {
+      locations: [],
+      properties: [],
+      mid: '',
+      locale: '',
+      description: '21',
+      score: 0,
+      confidence: 0,
+      topicality: 0,
+      boundingPoly: [Object]
+    },
+    {
+      locations: [],
+      properties: [],
+      mid: '',
+      locale: '',
+      description: 'Version',
+      score: 0,
+      confidence: 0,
+      topicality: 0,
+      boundingPoly: [Object]
+    },
+    {
+      locations: [],
+      properties: [],
+      mid: '',
+      locale: '',
+      description: '2',
+      score: 0,
+      confidence: 0,
+      topicality: 0,
+      boundingPoly: [Object]
+    },
+    {
+      locations: [],
+      properties: [],
+      mid: '',
+      locale: '',
+      description: 'SURVEY',
+      score: 0,
+      confidence: 0,
+      topicality: 0,
+      boundingPoly: [Object]
+    },
+    {
+      locations: [],
+      properties: [],
+      mid: '',
+      locale: '',
+      description: 'PLAN',
+      score: 0,
+      confidence: 0,
+      topicality: 0,
+      boundingPoly: [Object]
+    },
+    {
+      locations: [],
+      properties: [],
+      mid: '',
+      locale: '',
+      description: 'Sheet',
+      score: 0,
+      confidence: 0,
+      topicality: 0,
+      boundingPoly: [Object]
+    },
+    {
+      locations: [],
+      properties: [],
+      mid: '',
+      locale: '',
+      description: 'of',
+      score: 0,
+      confidence: 0,
+      topicality: 0,
+      boundingPoly: [Object]
+    },
+    {
+      locations: [],
+      properties: [],
+      mid: '',
+      locale: '',
+      description: '4',
+      score: 0,
+      confidence: 0,
+      topicality: 0,
+      boundingPoly: [Object]
+    },
+    {
+      locations: [],
+      properties: [],
+      mid: '',
+      locale: '',
+      description: 'REFERENCE',
+      score: 0,
+      confidence: 0,
+      topicality: 0,
+      boundingPoly: [Object]
+    },
+    {
+      locations: [],
+      properties: [],
+      mid: '',
+      locale: '',
+      description: 'MARKS',
+      score: 0,
+      confidence: 0,
+      topicality: 0,
+      boundingPoly: [Object]
+    },
+    {
+      locations: [],
+      properties: [],
+      mid: '',
+      locale: '',
+      description: 'PERMANENT',
+      score: 0,
+      confidence: 0,
+      topicality: 0,
+      boundingPoly: [Object]
+    },
+    {
+      locations: [],
+      properties: [],
+      mid: '',
+      locale: '',
+      description: 'MARKS',
+      score: 0,
+      confidence: 0,
+      topicality: 0,
+      boundingPoly: [Object]
+    },
+    {
+      locations: [],
+      properties: [],
+      mid: '',
+      locale: '',
+      description: 'STN',
+      score: 0,
+      confidence: 0,
+      topicality: 0,
+      boundingPoly: [Object]
+    },
+    {
+      locations: [],
+      properties: [],
+      mid: '',
+      locale: '',
+      description: 'TO',
+      score: 0,
+      confidence: 0,
+      topicality: 0,
+      boundingPoly: [Object]
+    },
+    {
+      locations: [],
+      properties: [],
+      mid: '',
+      locale: '',
+      description: 'ORIGIN',
+      score: 0,
+      confidence: 0,
+      topicality: 0,
+      boundingPoly: [Object]
+    },
+    {
+      locations: [],
+      properties: [],
+      mid: '',
+      locale: '',
+      description: 'BEARING',
+      score: 0,
+      confidence: 0,
+      topicality: 0,
+      boundingPoly: [Object]
+    },
+    {
+      locations: [],
+      properties: [],
+      mid: '',
+      locale: '',
+      description: 'DIST',
+      score: 0,
+      confidence: 0,
+      topicality: 0,
+      boundingPoly: [Object]
+    },
+    {
+      locations: [],
+      properties: [],
+      mid: '',
+      locale: '',
+      description: 'PM',
+      score: 0,
+      confidence: 0,
+      topicality: 0,
+      boundingPoly: [Object]
+    },
+    {
+      locations: [],
+      properties: [],
+      mid: '',
+      locale: '',
+      description: 'ORIGIN',
+      score: 0,
+      confidence: 0,
+      topicality: 0,
+      boundingPoly: [Object]
+    },
+    {
+      locations: [],
+      properties: [],
+      mid: '',
+      locale: '',
+      description: 'BEARING',
+      score: 0,
+      confidence: 0,
+      topicality: 0,
+      boundingPoly: [Object]
+    },
+    {
+      locations: [],
+      properties: [],
+      mid: '',
+      locale: '',
+      description: 'DIST',
+      score: 0,
+      confidence: 0,
+      topicality: 0,
+      boundingPoly: [Object]
+    },
+    {
+      locations: [],
+      properties: [],
+      mid: '',
+      locale: '',
+      description: 'NO',
+      score: 0,
+      confidence: 0,
+      topicality: 0,
+      boundingPoly: [Object]
+    },
+    {
+      locations: [],
+      properties: [],
+      mid: '',
+      locale: '',
+      description: 'O',
+      score: 0,
+      confidence: 0,
+      topicality: 0,
+      boundingPoly: [Object]
+    },
+    {
+      locations: [],
+      properties: [],
+      mid: '',
+      locale: '',
+      description: 'Screw',
+      score: 0,
+      confidence: 0,
+      topicality: 0,
+      boundingPoly: [Object]
+    },
+    {
+      locations: [],
+      properties: [],
+      mid: '',
+      locale: '',
+      description: 'in',
+      score: 0,
+      confidence: 0,
+      topicality: 0,
+      boundingPoly: [Object]
+    },
+    {
+      locations: [],
+      properties: [],
+      mid: '',
+      locale: '',
+      description: 'Kerb',
+      score: 0,
+      confidence: 0,
+      topicality: 0,
+      boundingPoly: [Object]
+    },
+    {
+      locations: [],
+      properties: [],
+      mid: '',
+      locale: '',
+      description: 'O',
+      score: 0,
+      confidence: 0,
+      topicality: 0,
+      boundingPoly: [Object]
+    },
+    {
+      locations: [],
+      properties: [],
+      mid: '',
+      locale: '',
+      description: 'Nail',
+      score: 0,
+      confidence: 0,
+      topicality: 0,
+      boundingPoly: [Object]
+    },
+    {
+      locations: [],
+      properties: [],
+      mid: '',
+      locale: '',
+      description: 'in',
+      score: 0,
+      confidence: 0,
+      topicality: 0,
+      boundingPoly: [Object]
+    },
+    {
+      locations: [],
+      properties: [],
+      mid: '',
+      locale: '',
+      description: 'Conc',
+      score: 0,
+      confidence: 0,
+      topicality: 0,
+      boundingPoly: [Object]
+    },
+    {
+      locations: [],
+      properties: [],
+      mid: '',
+      locale: '',
+      description: 'O',
+      score: 0,
+      confidence: 0,
+      topicality: 0,
+      boundingPoly: [Object]
+    },
+    {
+      locations: [],
+      properties: [],
+      mid: '',
+      locale: '',
+      description: 'Screw',
+      score: 0,
+      confidence: 0,
+      topicality: 0,
+      boundingPoly: [Object]
+    },
+    {
+      locations: [],
+      properties: [],
+      mid: '',
+      locale: '',
+      description: 'in',
+      score: 0,
+      confidence: 0,
+      topicality: 0,
+      boundingPoly: [Object]
+    },
+    {
+      locations: [],
+      properties: [],
+      mid: '',
+      locale: '',
+      description: 'Rock',
+      score: 0,
+      confidence: 0,
+      topicality: 0,
+      boundingPoly: [Object]
+    },
+    {
+      locations: [],
+      properties: [],
+      mid: '',
+      locale: '',
+      description: 'O',
+      score: 0,
+      confidence: 0,
+      topicality: 0,
+      boundingPoly: [Object]
+    },
+    {
+      locations: [],
+      properties: [],
+      mid: '',
+      locale: '',
+      description: 'Nail',
+      score: 0,
+      confidence: 0,
+      topicality: 0,
+      boundingPoly: [Object]
+    },
+    {
+      locations: [],
+      properties: [],
+      mid: '',
+      locale: '',
+      description: 'in',
+      score: 0,
+      confidence: 0,
+      topicality: 0,
+      boundingPoly: [Object]
+    },
+    {
+      locations: [],
+      properties: [],
+      mid: '',
+      locale: '',
+      description: 'Manhole',
+      score: 0,
+      confidence: 0,
+      topicality: 0,
+      boundingPoly: [Object]
+    },
+    {
+      locations: [],
+      properties: [],
+      mid: '',
+      locale: '',
+      description: 'O',
+      score: 0,
+      confidence: 0,
+      topicality: 0,
+      boundingPoly: [Object]
+    },
+    {
+      locations: [],
+      properties: [],
+      mid: '',
+      locale: '',
+      description: 'GI',
+      score: 0,
+      confidence: 0,
+      topicality: 0,
+      boundingPoly: [Object]
+    },
+    {
+      locations: [],
+      properties: [],
+      mid: '',
+      locale: '',
+      description: 'Nail',
+      score: 0,
+      confidence: 0,
+      topicality: 0,
+      boundingPoly: [Object]
+    },
+    {
+      locations: [],
+      properties: [],
+      mid: '',
+      locale: '',
+      description: 'in',
+      score: 0,
+      confidence: 0,
+      topicality: 0,
+      boundingPoly: [Object]
+    },
+    {
+      locations: [],
+      properties: [],
+      mid: '',
+      locale: '',
+      description: 'Bit',
+      score: 0,
+      confidence: 0,
+      topicality: 0,
+      boundingPoly: [Object]
+    },
+    {
+      locations: [],
+      properties: [],
+      mid: '',
+      locale: '',
+      description: 'O',
+      score: 0,
+      confidence: 0,
+      topicality: 0,
+      boundingPoly: [Object]
+    },
+    {
+      locations: [],
+      properties: [],
+      mid: '',
+      locale: '',
+      description: 'Screw',
+      score: 0,
+      confidence: 0,
+      topicality: 0,
+      boundingPoly: [Object]
+    },
+    {
+      locations: [],
+      properties: [],
+      mid: '',
+      locale: '',
+      description: 'in',
+      score: 0,
+      confidence: 0,
+      topicality: 0,
+      boundingPoly: [Object]
+    },
+    {
+      locations: [],
+      properties: [],
+      mid: '',
+      locale: '',
+      description: 'Kerb',
+      score: 0,
+      confidence: 0,
+      topicality: 0,
+      boundingPoly: [Object]
+    },
+    {
+      locations: [],
+      properties: [],
+      mid: '',
+      locale: '',
+      description: '127',
+      score: 0,
+      confidence: 0,
+      topicality: 0,
+      boundingPoly: [Object]
+    },
+    {
+      locations: [],
+      properties: [],
+      mid: '',
+      locale: '',
+      description: '0',
+      score: 0,
+      confidence: 0,
+      topicality: 0,
+      boundingPoly: [Object]
+    },
+    {
+      locations: [],
+      properties: [],
+      mid: '',
+      locale: '',
+      description: 'Screw',
+      score: 0,
+      confidence: 0,
+      topicality: 0,
+      boundingPoly: [Object]
+    },
+    {
+      locations: [],
+      properties: [],
+      mid: '',
+      locale: '',
+      description: 'in',
+      score: 0,
+      confidence: 0,
+      topicality: 0,
+      boundingPoly: [Object]
+    },
+    {
+      locations: [],
+      properties: [],
+      mid: '',
+      locale: '',
+      description: 'Conc',
+      score: 0,
+      confidence: 0,
+      topicality: 0,
+      boundingPoly: [Object]
+    },
+    {
+      locations: [],
+      properties: [],
+      mid: '',
+      locale: '',
+      description: 'Barrier|127/DP229963',
+      score: 0,
+      confidence: 0,
+      topicality: 0,
+      boundingPoly: [Object]
+    },
+    {
+      locations: [],
+      properties: [],
+      mid: '',
+      locale: '',
+      description: 'OD',
+      score: 0,
+      confidence: 0,
+      topicality: 0,
+      boundingPoly: [Object]
+    },
+    {
+      locations: [],
+      properties: [],
+      mid: '',
+      locale: '',
+      description: 'Hole',
+      score: 0,
+      confidence: 0,
+      topicality: 0,
+      boundingPoly: [Object]
+    },
+    {
+      locations: [],
+      properties: [],
+      mid: '',
+      locale: '',
+      description: 'in',
+      score: 0,
+      confidence: 0,
+      topicality: 0,
+      boundingPoly: [Object]
+    },
+    {
+      locations: [],
+      properties: [],
+      mid: '',
+      locale: '',
+      description: 'Conc',
+      score: 0,
+      confidence: 0,
+      topicality: 0,
+      boundingPoly: [Object]
+    },
+    {
+      locations: [],
+      properties: [],
+      mid: '',
+      locale: '',
+      description: 'OD',
+      score: 0,
+      confidence: 0,
+      topicality: 0,
+      boundingPoly: [Object]
+    },
+    {
+      locations: [],
+      properties: [],
+      mid: '',
+      locale: '',
+      description: 'Hole',
+      score: 0,
+      confidence: 0,
+      topicality: 0,
+      boundingPoly: [Object]
+    },
+    {
+      locations: [],
+      properties: [],
+      mid: '',
+      locale: '',
+      description: 'in',
+      score: 0,
+      confidence: 0,
+      topicality: 0,
+      boundingPoly: [Object]
+    },
+    {
+      locations: [],
+      properties: [],
+      mid: '',
+      locale: '',
+      description: 'Conc',
+      score: 0,
+      confidence: 0,
+      topicality: 0,
+      boundingPoly: [Object]
+    },
+    {
+      locations: [],
+      properties: [],
+      mid: '',
+      locale: '',
+      description: 'O',
+      score: 0,
+      confidence: 0,
+      topicality: 0,
+      boundingPoly: [Object]
+    },
+    {
+      locations: [],
+      properties: [],
+      mid: '',
+      locale: '',
+      description: 'Nail',
+      score: 0,
+      confidence: 0,
+      topicality: 0,
+      boundingPoly: [Object]
+    },
+    {
+      locations: [],
+      properties: [],
+      mid: '',
+      locale: '',
+      description: 'in',
+      score: 0,
+      confidence: 0,
+      topicality: 0,
+      boundingPoly: [Object]
+    },
+    {
+      locations: [],
+      properties: [],
+      mid: '',
+      locale: '',
+      description: 'Conc',
+      score: 0,
+      confidence: 0,
+      topicality: 0,
+      boundingPoly: [Object]
+    },
+    {
+      locations: [],
+      properties: [],
+      mid: '',
+      locale: '',
+      description: '19/DP229943',
+      score: 0,
+      confidence: 0,
+      topicality: 0,
+      boundingPoly: [Object]
+    },
+    {
+      locations: [],
+      properties: [],
+      mid: '',
+      locale: '',
+      description: '71/SP229944',
+      score: 0,
+      confidence: 0,
+      topicality: 0,
+      boundingPoly: [Object]
+    },
+    {
+      locations: [],
+      properties: [],
+      mid: '',
+      locale: '',
+      description: '72/DP229963',
+      score: 0,
+      confidence: 0,
+      topicality: 0,
+      boundingPoly: [Object]
+    },
+    {
+      locations: [],
+      properties: [],
+      mid: '',
+      locale: '',
+      description: '72/DP229963',
+      score: 0,
+      confidence: 0,
+      topicality: 0,
+      boundingPoly: [Object]
+    },
+    {
+      locations: [],
+      properties: [],
+      mid: '',
+      locale: '',
+      description: '99/DP229963',
+      score: 0,
+      confidence: 0,
+      topicality: 0,
+      boundingPoly: [Object]
+    },
+    {
+      locations: [],
+      properties: [],
+      mid: '',
+      locale: '',
+      description: '123/SP229944',
+      score: 0,
+      confidence: 0,
+      topicality: 0,
+      boundingPoly: [Object]
+    },
+    {
+      locations: [],
+      properties: [],
+      mid: '',
+      locale: '',
+      description: '19',
+      score: 0,
+      confidence: 0,
+      topicality: 0,
+      boundingPoly: [Object]
+    },
+    {
+      locations: [],
+      properties: [],
+      mid: '',
+      locale: '',
+      description: "199°41'",
+      score: 0,
+      confidence: 0,
+      topicality: 0,
+      boundingPoly: [Object]
+    },
+    {
+      locations: [],
+      properties: [],
+      mid: '',
+      locale: '',
+      description: "102°34'",
+      score: 0,
+      confidence: 0,
+      topicality: 0,
+      boundingPoly: [Object]
+    },
+    {
+      locations: [],
+      properties: [],
+      mid: '',
+      locale: '',
+      description: '95-OPM',
+      score: 0,
+      confidence: 0,
+      topicality: 0,
+      boundingPoly: [Object]
+    },
+    {
+      locations: [],
+      properties: [],
+      mid: '',
+      locale: '',
+      description: '|',
+      score: 0,
+      confidence: 0,
+      topicality: 0,
+      boundingPoly: [Object]
+    },
+    {
+      locations: [],
+      properties: [],
+      mid: '',
+      locale: '',
+      description: '95/DP229963',
+      score: 0,
+      confidence: 0,
+      topicality: 0,
+      boundingPoly: [Object]
+    },
+    {
+      locations: [],
+      properties: [],
+      mid: '',
+      locale: '',
+      description: '|',
+      score: 0,
+      confidence: 0,
+      topicality: 0,
+      boundingPoly: [Object]
+    },
+    {
+      locations: [],
+      properties: [],
+      mid: '',
+      locale: '',
+      description: '257°40ʻ15"',
+      score: 0,
+      confidence: 0,
+      topicality: 0,
+      boundingPoly: [Object]
+    },
+    {
+      locations: [],
+      properties: [],
+      mid: '',
+      locale: '',
+      description: '96-OPM',
+      score: 0,
+      confidence: 0,
+      topicality: 0,
+      boundingPoly: [Object]
+    },
+    {
+      locations: [],
+      properties: [],
+      mid: '',
+      locale: '',
+      description: '|',
+      score: 0,
+      confidence: 0,
+      topicality: 0,
+      boundingPoly: [Object]
+    },
+    {
+      locations: [],
+      properties: [],
+      mid: '',
+      locale: '',
+      description: '96/DP229963',
+      score: 0,
+      confidence: 0,
+      topicality: 0,
+      boundingPoly: [Object]
+    },
+    {
+      locations: [],
+      properties: [],
+      mid: '',
+      locale: '',
+      description: '123–OPM',
+      score: 0,
+      confidence: 0,
+      topicality: 0,
+      boundingPoly: [Object]
+    },
+    {
+      locations: [],
+      properties: [],
+      mid: '',
+      locale: '',
+      description: '|',
+      score: 0,
+      confidence: 0,
+      topicality: 0,
+      boundingPoly: [Object]
+    },
+    {
+      locations: [],
+      properties: [],
+      mid: '',
+      locale: '',
+      description: '123/SP229944',
+      score: 0,
+      confidence: 0,
+      topicality: 0,
+      boundingPoly: [Object]
+    },
+    {
+      locations: [],
+      properties: [],
+      mid: '',
+      locale: '',
+      description: '|',
+      score: 0,
+      confidence: 0,
+      topicality: 0,
+      boundingPoly: [Object]
+    },
+    {
+      locations: [],
+      properties: [],
+      mid: '',
+      locale: '',
+      description: `166°45'40"`,
+      score: 0,
+      confidence: 0,
+      topicality: 0,
+      boundingPoly: [Object]
+    },
+    {
+      locations: [],
+      properties: [],
+      mid: '',
+      locale: '',
+      description: '3.523',
+      score: 0,
+      confidence: 0,
+      topicality: 0,
+      boundingPoly: [Object]
+    },
+    {
+      locations: [],
+      properties: [],
+      mid: '',
+      locale: '',
+      description: '44-661',
+      score: 0,
+      confidence: 0,
+      topicality: 0,
+      boundingPoly: [Object]
+    },
+    {
+      locations: [],
+      properties: [],
+      mid: '',
+      locale: '',
+      description: '177831',
+      score: 0,
+      confidence: 0,
+      topicality: 0,
+      boundingPoly: [Object]
+    },
+    {
+      locations: [],
+      properties: [],
+      mid: '',
+      locale: '',
+      description: '71',
+      score: 0,
+      confidence: 0,
+      topicality: 0,
+      boundingPoly: [Object]
+    },
+    ... 483 more items
+  ],
+  localizedObjectAnnotations: [],
+  safeSearchAnnotation: null,
+  imagePropertiesAnnotation: null,
+  error: null,
+  cropHintsAnnotation: null,
+  fullTextAnnotation: {
+    pages: [ [Object] ],
+    text: 'Land Title Act 1994; Land Act 1994\n' +
+      'Form 21 Version 2\n' +
+      'SURVEY PLAN\n' +
+      'Sheet\n' +
+      'of\n' +
+      '4\n' +
+      'REFERENCE MARKS\n' +
+      'PERMANENT MARKS\n' +
+      'STN\n' +
+      'TO\n' +
+      'ORIGIN\n' +
+      'BEARING\n' +
+      'DIST\n' +
+      'PM\n' +
+      'ORIGIN\n' +
+      'BEARING DIST\n' +
+      'NO\n' +
+      'O Screw in Kerb\n' +
+      'O Nail in Conc\n' +
+      'O Screw in Rock\n' +
+      'O Nail in Manhole\n' +
+      'O GI Nail in Bit\n' +
+      'O Screw in Kerb\n' +
+      '127 0 Screw in Conc Barrier|127/DP229963\n' +
+      'OD Hole in Conc\n' +
+      'OD Hole in Conc\n' +
+      'O Nail in Conc\n' +
+      '19/DP229943\n' +
+      '71/SP229944\n' +
+      '72/DP229963\n' +
+      '72/DP229963\n' +
+      '99/DP229963\n' +
+      '123/SP229944\n' +
+      '19\n' +
+      "199°41'\n" +
+      "102°34'\n" +
+      '95-OPM | 95/DP229963 | 257°40ʻ15"\n' +
+      '96-OPM | 96/DP229963\n' +
+      `123–OPM | 123/SP229944 | 166°45'40"\n` +
+      '3.523\n' +
+      '44-661\n' +
+      '177831\n' +
+      '71\n' +
+      '7.025\n' +
+      "47°32'\n" +
+      '17:761\n' +
+      '139786\n' +
+      '72\n' +
+      "9°09'\n" +
+      '4.065\n' +
+      '22.8\n' +
+      '139683\n' +
+      '72\n' +
+      "9°22'\n" +
+      '14.158\n' +
+      '99\n' +
+      "206°42'\n" +
+      '13-598\n' +
+      '|123\n' +
+      "189°04'\n" +
+      "47°32'\n" +
+      '3.676\n' +
+      '5.25\n' +
+      '132\n' +
+      '|202\n' +
+      '203\n' +
+      '370\n' +
+      '132/DP229963\n' +
+      "202/SP229966 257°25'\n" +
+      '203/SP229966\n' +
+      '|370/SP229944\n' +
+      'Original information compiled from SP198683, SP229946, RP152648,\n' +
+      '& SP229966 in the Department of Environment\n' +
+      'and Resource Management.\n' +
+      "202°27'\n" +
+      '13.45\n' +
+      '0:2\n' +
+      "193°38'\n" +
+      '0:803\n' +
+      'OD Hole in Conc\n' +
+      "52°10'\n" +
+      '0:34\n' +
+      '370 Screw in Conc Barrier\n' +
+      'D Hole in Conc\n' +
+      'O Screw in Conc\n' +
+      "139°40'\n" +
+      '6.15\n' +
+      '0:212\n' +
+      'Peg placed at all subject corners,\n' +
+      'unless otherwise stated.\n' +
+      '395\n' +
+      '396\n' +
+      '397\n' +
+      '398\n' +
+      '399\n' +
+      '399\n' +
+      '400\n' +
+      "215°39'\n" +
+      "389/SP229944 229°33'\n" +
+      '0:75\n' +
+      'New Conn\n' +
+      'Screw in Conc\n' +
+      "49°29'\n" +
+      '2:46\n' +
+      'D Hole in Conc\n' +
+      'O Screw in Conc\n' +
+      'O Nail in Parapet\n' +
+      'O Screw in Conc\n' +
+      '4010 Screw in Conc Barrier 122/DP229963\n' +
+      "234°03'\n" +
+      '0-128\n' +
+      '391/SP229944\n' +
+      '391/SP229944\n' +
+      '390/SP229944\n' +
+      "49°21'\n" +
+      '0:75\n' +
+      '2-895\n' +
+      'New Conn\n' +
+      'New Conn\n' +
+      'Reserved plan of survey under section 65(4)(i) of the\n' +
+      'Survey & Mapping Infrastructure Act 2003.\n' +
+      "234°58'\n" +
+      "229°12'\n" +
+      '0:75\n' +
+      'New Conn\n' +
+      "49°36'\n" +
+      '1:196\n' +
+      'New Conn\n' +
+      '402\n' +
+      '545\n' +
+      '547\n' +
+      'Nail in Conc Barrier\n' +
+      "218°0'\n" +
+      '5:378\n' +
+      "545/SP229966 246°30'\n" +
+      '547/SP229966\n' +
+      'OD Hole in Conc\n' +
+      'OD Hole in Conc\n' +
+      '600 Screw in Conc Barrier\n' +
+      'I Pin\n' +
+      'Screw in Kerb\n' +
+      'Screw in Conc\n' +
+      '0:842\n' +
+      '0.919\n' +
+      "241°26'\n" +
+      "230°|l'\n" +
+      '1:274\n' +
+      '601\n' +
+      'SP158926\n' +
+      "165°34'\n" +
+      "359°12'\n" +
+      '2-676\n' +
+      '602\n' +
+      '603\n' +
+      '604\n' +
+      '605\n' +
+      '|606\n' +
+      '607\n' +
+      '608\n' +
+      '|609\n' +
+      'DP229949\n' +
+      'DP229906\n' +
+      '2:116\n' +
+      "309°59'\n" +
+      '0-711\n' +
+      '3.166\n' +
+      '4.062\n' +
+      'Nail in Conc Barrier\n' +
+      "60°04'\n" +
+      'Lot 447\n' +
+      'on SL8469\n' +
+      'Screw in Conc\n' +
+      "97°33'\n" +
+      'GI Nail in Bit\n' +
+      "257°31'\n" +
+      '0-806\n' +
+      'D Hole in Conc\n' +
+      'D Hole in Conc\n' +
+      'Nail in Conc\n' +
+      "277°35'\n" +
+      '0-936\n' +
+      'DP229971\n' +
+      "269°05'\n" +
+      '0-935\n' +
+      "159°41'\n" +
+      '0:477\n' +
+      '62\n' +
+      'SP198683\n' +
+      'ŞP229966 * ESA 99\n' +
+      'POR 433\n' +
+      'Enoggera\n' +
+      '80\n' +
+      '23\n' +
+      '7어\n' +
+      'SP229944\n' +
+      '75\n' +
+      'SP229966\n' +
+      'Emt C\n' +
+      'SP221420\n' +
+      'MI\n' +
+      '21\n' +
+      'SP229944\n' +
+      '72\n' +
+      '370\n' +
+      '63\n' +
+      'SP221420\n' +
+      'SP229966\n' +
+      'DP221422\n' +
+      '74\n' +
+      'DP229947\n' +
+      'ô4\n' +
+      '78\n' +
+      'SP229966\n' +
+      '96,\n' +
+      'RP92589\n' +
+      'DP229969\n' +
+      'SP229944\n' +
+      'ESA I0!\n' +
+      '73-\n' +
+      'Emt D\n' +
+      'SP221420\n' +
+      'Emt B\n' +
+      'RP142244\n' +
+      '71\n' +
+      '77\n' +
+      '79\n' +
+      'RP9923\n' +
+      '72\n' +
+      'Building\n' +
+      '123\n' +
+      'Emt A\n' +
+      'DP229943\n' +
+      'CAMPBELL\n' +
+      '95\n' +
+      '112\n' +
+      '68\n' +
+      'STREET\n' +
+      'DP229921\n' +
+      'LandPartners Limited (ACN I18 146 008) hereby certify that the\n' +
+      'land comprised in this plan was surveyed by the corporation, by\n' +
+      'Ian Stewart BREDDIN, surveying graduate and Ilka SCHOENEFUSS,\n' +
+      'surveying graduate for whose work the corporation accepts\n' +
+      'responsibility, under the supervision of Roland Pi-is ODSEY,\n' +
+      'cadastral surveyor and that the plan is accurate, that the said\n' +
+      'survey was performed in accordance with the Survey and Mapping\n' +
+      'Infrastructure Act 2003 and Surveyors Act 2003 and associated\n' +
+      'Regulations and Standards and that the said survey was completed\n' +
+      'on 25/03/2010.\n' +
+      'Om\n' +
+      '62-5m\n' +
+      '125m\n' +
+      '187:5m\n' +
+      '|0\n' +
+      '50|mm\n' +
+      '100 |mm\n' +
+      '150 |mm\n' +
+      'State copyright reserved.\n' +
+      'Plan 71-80\n' +
+      'of Lots\n' +
+      '1:1250\n' +
+      'Scale:\n' +
+      'Format: STANDARD\n' +
+      'LIMITED\n' +
+      'Aloten\n' +
+      'Cancelling Lot 20 on SP229944, Lot 30 on SP229946\n' +
+      '& Lot 60 on SP229966\n' +
+      'The\n' +
+      'Common\n' +
+      'Director\n' +
+      'Seal\n' +
+      'Switer\n' +
+      'SP229975\n' +
+      'Director\n' +
+      'of\n' +
+      'PARISH: NORTH BRISBANE COUNTY: Stanley\n' +
+      'Plan Status:\n' +
+      '25\n' +
+      'Date\n' +
+      'Meridian: DP229963\n' +
+      "F/N's: Vide SP229944\n" +
+      'SHEET\n' +
+      'SEE\n' +
+      'Creek\n' +
+      'Emt A\n' +
+      'ROAD\n' +
+      'ACN\n' +
+      'RP9924\n' +
+      '118:146\n' +
+      '446\n' +
+      'POR,\n' +
+      'DP229963 ROAD DP229945\n' +
+      'SHEET\n' +
+      'SEE\n' +
+      'ROAD\n' +
+      'Emt E\n' +
+      'SP221420\n' +
+      'BRJD4253.002-053D\n' +
+      '425302HG\n'
+  },
+  webDetection: null,
+  productSearchResults: null,
+  context: null
+}

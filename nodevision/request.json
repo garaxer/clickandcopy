@@ -1,0 +1,14 @@
+{
+  "requests": [
+    {
+      "image": {
+        "content": "SP229975_0.jpg"
+      },
+      "features": [
+        {
+          "type": "TEXT_DETECTION"
+        }
+      ]
+    }
+  ]
+}
