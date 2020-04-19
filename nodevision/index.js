@@ -1,40 +1,76 @@
-async function quickstart(fileName) {
-  // export GOOGLE_APPLICATION_CREDENTIALS=PlanCapture.json
-  // Imports the Google Cloud client library
-  const vision = require('@google-cloud/vision');
+const express = require('express');
+const path = require('path')
+const multer  = require('multer')
+const upload = multer().array('imgCollection')
+const config = require('./lib/config');
+// Imports the Google Cloud client library.
+const {Storage} = require('@google-cloud/storage');
 
-  // Creates a client
-  // const clientOptions = {apiEndpoint: 'eu-vision.googleapis.com'};
-  const client = new vision.ImageAnnotatorClient();
+const app = express()
+app.listen(PORT = 3000, e => console.log(`listening ${PORT}: ${e || 'ok'}`))
+console.log(path.join(__dirname, './PlanCapture.json'))
+console.log(config.google.projectId)
+
+app.get('/',(req,res)=>res.send('Running'))
+//https://dev.to/idiglove/file-upload-with-react-express-and-google-cloud-storage-with-folder-structure-2i5j
+
+app.post('/', function(req, res, next) {
  
-  //const [result] = await client.textDetection(fileName, {language_hints: ["en"]});
-  const [result] = await client.documentTextDetection(fileName);
+  //const storage = new Storage({projectId: 'plancapture', keyFilename: });
 
-  //document_text_detection
-  //const detections = result.textAnnotations;
-  //const detections = result;
-  //const a = detections.textAnnotations[0].description
-  //console.log(a)
-  //console.log(detections.fullTextAnnotation.pages[0].blocks[0].paragraphs[0].words[0].symbols[0].text)
-  //console.log('Text:');
-  //const [result] = await client.textDetection(fileName);
-  //const detections = result.textAnnotations;
-  //console.log('Text:');
-  //detections.forEach(text => console.log(text));
-  // Performs label detection on the image file
-  // const [result] = await client.labelDetection(fileName);
-  // const labels = result.labelAnnotations;
-  // console.log('Labels:');
-  // labels.forEach(label => console.log(label.description));
-
-  const textCoordinates = {}
-  const detections = result.textAnnotations;
-
-  detections.forEach(text => {
-    //console.log(text)
-    console.log(text.description)
-    console.log(text.boundingPoly)
+  const storage = new Storage({
+		projectId: config.google.projectId,
+		keyFilename: path.join(__dirname, 'PlanCapture.json'),
   });
-}
+  
+  async function uploadFile(file, folder) {
 
-quickstart('SP229975_0.jpg')
+    const bucket = storage.bucket(config.google.bucket)
+
+    const newFileName = folder + '/' + file.originalname;
+
+    let fileUpload = bucket.file(newFileName);
+    const blobStream = fileUpload.createWriteStream({
+      metadata: {
+        contentType: file.mimetype
+      }
+    });
+
+    blobStream.on('error', (error) => {
+      console.log('Something is wrong! Upload failed: ' + error);
+    });
+
+    blobStream.on('finish', () => {
+        const url = `https://storage.googleapis.com/${bucket.name}/${fileUpload.name}`; //image url from firebase server
+        console.log(url)
+        res.status(200).json({
+          data: {
+            url: url,
+          },
+        });
+    });
+
+    blobStream.end(file.buffer);
+  }
+
+  upload(req, res, function(err) {
+    let files = req.files
+
+    for (let file in files) {
+      uploadFile(files[file], req.body.folder)
+    }
+
+    if(err) {
+        return res.end("Error uploading file." + err);
+    }
+    res.end("File is uploaded");
+  });
+
+});
+
+
+
+
+
+
+
