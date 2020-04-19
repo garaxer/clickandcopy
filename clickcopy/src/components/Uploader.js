@@ -1,3 +1,5 @@
+import axios from 'axios';
+
 import React, {useCallback, useState} from 'react';
 import {useDropzone} from 'react-dropzone';
 import styled from 'styled-components';
@@ -55,8 +57,9 @@ const Uploader = (props) => {
 
   const onDrop = useCallback(acceptedFiles => {
     // Do something with the files
-    //acceptedFiles[0] = 'file'
+    //acceptedFiles[0] = 'file'`
     console.log(acceptedFiles[0].name)
+    
     uploadPlan(acceptedFiles[0])(dispatch)
   }, [])
   

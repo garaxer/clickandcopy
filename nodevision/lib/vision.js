@@ -1,6 +1,7 @@
 const fs = require('fs');
 
-const quickstart = async (fileName) => {
+const visionText = async (fileName, callBack) => {
+  
   // export GOOGLE_APPLICATION_CREDENTIALS=PlanCapture.json
 
   //export API_ENDPOINT = 'http://localhost:3000/
@@ -44,12 +45,18 @@ const quickstart = async (fileName) => {
       }))
     }
   ));
-
+  callBack(data)
+  
   data = JSON.stringify(data, null, 2);
-  fs.writeFile('test2.json', data, (err) => {
+  fs.writeFile('test3.json', data, (err) => {
       if (err) throw err;
       console.log('Data written to file');
   });
 
-  return {data, fileName}
+  //console.log('vision complete');
+  //console.log(data);
+
+  
 }
+
+module.exports = visionText;
