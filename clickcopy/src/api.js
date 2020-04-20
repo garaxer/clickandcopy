@@ -5,8 +5,9 @@ export const uploadPlan = (file) => async dispatch => {
   let fd = new FormData();
   fd.append('file', file);
   
+  process.env.API_URL ? console.log(process.env.API_URL) : console.log('no env')
 
-  const response = await axios.post('http://localhost:8080/', fd, {
+  const response = await axios.post(process.env.API_URL ? `${process.env.API_URL}`:'http://localhost:8080/', fd, {
     headers: {
       'Content-Type': 'multipart/form-data'
     }

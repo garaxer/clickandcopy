@@ -6,8 +6,9 @@ const visionText = (fileName, callBack) => {
   const callVision = async () => {
     console.log(fileName)
     // export GOOGLE_APPLICATION_CREDENTIALS=PlanCapture.json
+    // process.env.REACT_APP_API_ENDPOINT
 
-    //export API_ENDPOINT = 'http://localhost:3000/
+    //export API_URL='http://localhost:3000/'
     //${process.env.REACT_APP_API_ENDPOINT}/`
 
     // Imports the Google Cloud client library
