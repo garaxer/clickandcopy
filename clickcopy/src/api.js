@@ -12,9 +12,7 @@ export const uploadPlan = (file) => async dispatch => {
     }
   });
 
-  console.log(response)
-
-  dispatch({ type: 'PLAN_UPLOAD', payload: response.data });
+  dispatch({ type: 'PLAN_UPLOAD', payload: response });
 }
 
 export const uploadPlanOld = (file) => dispatch => {

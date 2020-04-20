@@ -1,4 +1,4 @@
-export const imageurl = 'testImage.jpg'
+export const testimageurl = 'testImage.jpg'
 
 export const testData = [
 

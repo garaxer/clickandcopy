@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import ImageView from './ImageView';
 import Uploader from './Uploader';
 
-import {imageurl, testData} from '../testData';
+import {testimageurl, testData} from '../testData';
 
 import { Grid } from '@material-ui/core';
 
@@ -28,6 +28,7 @@ const GreenCheckbox = withStyles({
 const useStyles = makeStyles({
   root: {
     width: 300,
+    margin:'auto'
   },
 });
 
@@ -38,8 +39,18 @@ const App = () => {
   const [checkForText, setCheckForText] = useState(true);
   const [textColour, setTextColour] = useState('tomato');
 
+  const [imageUrl, setImageUrl] = useState(testimageurl);
+  const [textData, setTextData] = useState(testData);
+
+  
+  /* Gets called upon filedupload, only one dispatch in this app so we aren't filtering by payload type */
+  const dispatch = ({url, data}) =>{
+    console.log(url, data)
+  }
+
+
   const [imageWidth, setImageWidth] = useState(830);
-  const [, ...data] = testData; //first response from G vision is bogus
+  //const [, ...textData] = ; //first response from G vision is bogus
   
   const handleChange = (event) => {
     setTextColour(event.target.value);
@@ -56,10 +67,7 @@ const App = () => {
       <h1>Text Extractor</h1>
       
       <div>
-        Image Upload 
-        <Uploader />
-        <button id="button">Check boxes for options go here</button>
-
+        <Uploader parentDispatch={dispatch} />
         <p></p>
       </div>
       <div>
@@ -85,20 +93,21 @@ const App = () => {
             step={100}
             marks
             min={500}
-            max={3000}
+            max={window.innerWidth}
 
             value={imageWidth}
             onChange={(event, newValue) => setImageWidth(newValue)}
             valueLabelDisplay="auto"
           />
+
         </div>
       </div>
       <ImageView
         width={`${imageWidth}px`}
-        imageUrl={imageurl}
+        imageUrl={imageUrl}
         textVisible={checkForText}
         imageVisible={checkForImage}
-        text={data}
+        text={textData}
         textColour={textColour}
       />
     </Grid>

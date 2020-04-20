@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 /**
  * Takes in an image and a list of text with their coordinates and displays the text on top of the image
@@ -11,7 +11,17 @@ const ImageView = (props) => {
   const [originalImageWidth, setOriginalImageWidth] = useState(0)
   const [newWidth, setNewWidth] = useState(0)
 
+  const imgElement = React.useRef(null);
 
+  useEffect(()=>{
+    handleSize(imgElement)
+  },[width])
+
+  //const showOverlayText = () => {
+  //  console.log('overlaying text');
+  //  return originalImageWidth && overlayText(text)
+  //}
+  
   const onTextClick = (e) => {
     console.log(e)
   }
@@ -49,10 +59,9 @@ const ImageView = (props) => {
 
   /** Overalyed text on relative positioned parent */
   const overlayText = (words) => {
-
+    console.log(words)
     // Remove 1 character things
     const wordFilter = x => x['text'].length > 1 || x['text'].match(/[a-z0-9A-Z.]/i);
-
     // For each text make a component with its x an y as its position
     return words.filter(wordFilter).map((text, i) => {
       const word = text['text'];
@@ -72,17 +81,18 @@ const ImageView = (props) => {
   /** Gets called when the image is loaded onto the screen and places its width into state */
   const handleSize = (image) => {
     if (image) {
-      setOriginalImageWidth(image.naturalWidth)
-      setNewWidth(image.width)
+      console.log(image)
+      console.log('handling image height')
+      setOriginalImageWidth(image.current.naturalWidth)
+      setNewWidth(image.current.width)
     }
   }
 
   return (
     <div style={divStyle(imageVisible, imageUrl)}>
       <img style={imgStyle(width)} src={imageUrl} alt="plan"
-        ref={image => {
-          handleSize(image);
-        }}
+        ref={imgElement}
+        onLoad={() => handleSize(imgElement)}
       />
       {originalImageWidth && overlayText(text)}
       <h3 style={h2Style} >test</h3>
@@ -91,7 +101,7 @@ const ImageView = (props) => {
 }
 
 // TODO(gary): make global css into styled components 
-const imgStyle = (width, imageUrl) => ({
+const imgStyle = (width) => ({
   visibility: 'hidden',
   pointerEvents: 'none',
   width: width
