@@ -7,7 +7,7 @@ import React, { useState, useEffect } from 'react';
 const ImageView = (props) => {
   //
   //<img style={{visibility: 'hidden'}} src="SP229975_0.jpg" />
-  const { width, text, imageUrl, textVisible, imageVisible, textColour } = { textColour: 'tomato', textVisible: true, imageVisible: true, ...props };
+  const { width, text, imageUrl, textVisible, imageVisible, textColour, handleTextClick } = { textColour: 'tomato', textVisible: true, imageVisible: true, ...props };
   const [originalImageWidth, setOriginalImageWidth] = useState(0)
   const [newWidth, setNewWidth] = useState(0)
 
@@ -23,7 +23,9 @@ const ImageView = (props) => {
   //}
   
   const onTextClick = (e) => {
-    console.log(e)
+    console.log(e.target.innerHTML);
+    navigator.clipboard.writeText(e.target.innerHTML)
+    handleTextClick(e.target.innerHTML);
   }
 
   /** Style of the text to be displayed by overlayText */
@@ -59,7 +61,7 @@ const ImageView = (props) => {
 
   /** Overalyed text on relative positioned parent */
   const overlayText = (words) => {
-    console.log(words)
+    console.log('rendered text again')
     // Remove 1 character things
     const wordFilter = x => x['text'].length > 1 || x['text'].match(/[a-z0-9A-Z.]/i);
     // For each text make a component with its x an y as its position

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import ImageView from './ImageView';
 import Uploader from './Uploader';
 
-import {testimageurl, testData} from '../testData';
+import { testimageurl, testData } from '../testData';
 
 import { Grid } from '@material-ui/core';
 
@@ -14,6 +14,7 @@ import TextField from '@material-ui/core/TextField';
 
 import Typography from '@material-ui/core/Typography';
 import Slider from '@material-ui/core/Slider';
+import Draggable from 'react-draggable';
 
 const GreenCheckbox = withStyles({
   root: {
@@ -28,7 +29,7 @@ const GreenCheckbox = withStyles({
 const useStyles = makeStyles({
   root: {
     width: 300,
-    margin:'auto'
+    margin: 'auto'
   },
 });
 
@@ -42,9 +43,22 @@ const App = () => {
   const [imageUrl, setImageUrl] = useState(testimageurl);
   const [textData, setTextData] = useState(testData);
 
-  
+  const [textAreaValue, setTextAreaValue] = useState('');
+  const [next, setNext] = useState(0);
+
+  //let newText = text.split('\n').map((item, i) => {
+  //  return <p key={i}>{item}</p>;
+  //});
+  const handleTextClick = (text) => {
+    const map = [',', ',0\n']
+
+    setTextAreaValue(textAreaValue + text + map[next])
+
+    setNext(next === 1 ? 0 : next + 1)
+  }
+
   /* Gets called upon filedupload, only one dispatch in this app so we aren't filtering by payload type */
-  const dispatch = ({url, data}) =>{
+  const dispatch = ({ url, data }) => {
     console.log(url, data)
     const [, ...textData] = data
     console.log('data')
@@ -59,7 +73,7 @@ const App = () => {
 
   const [imageWidth, setImageWidth] = useState(830);
   //const [, ...textData] = ; //first response from G vision is bogus
-  
+
   const handleChange = (event) => {
     setTextColour(event.target.value);
   }
@@ -71,9 +85,9 @@ const App = () => {
       justify="center"
       alignItems="center"
     >
-      
+
       <h1>Text Extractor</h1>
-      
+
       <div>
         <Uploader parentDispatch={dispatch} />
         <p></p>
@@ -89,7 +103,7 @@ const App = () => {
           label="Show Text"
         />
 
-        <TextField id="TextColor" label="Text Colour" variant="outlined" onChange={handleChange} value={textColour} size="small"/>
+        <TextField id="TextColor" label="Text Colour" variant="outlined" onChange={handleChange} value={textColour} size="small" />
         <div className={classes.root}>
           <Typography id="discrete-slider" gutterBottom>
             Image Width
@@ -117,9 +131,38 @@ const App = () => {
         imageVisible={checkForImage}
         text={textData}
         textColour={textColour}
+        handleTextClick={handleTextClick}
       />
+ 
+
+        <div style={{ position: 'absolute', top: '10%', left: 0 }}>
+        <Draggable handle="strong" {...{ onStart: () => '', onStop: () => '' }}
+        >
+          <div className="box no-cursor">
+            <strong className="cursor"><div>Microstation Text</div></strong>
+            <div>
+              <TextField
+                id="standard-multiline-static"
+                label=""
+                multiline
+                rows={30}
+                variant="outlined"
+                value={textAreaValue}
+                onChange={(event) => setTextAreaValue(event.target.value)}
+              />
+            </div>
+          </div>
+        </Draggable>
+        </div>
+
+
+
     </Grid>
   );
 }
 
+
 export default App;
+
+//{textAreaValue.split('\n').map((item, i) => <>{item}<br></br></>)}
+//

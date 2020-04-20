@@ -65,6 +65,8 @@ const Uploader = (props) => {
       console.log(action.payload)
       if (!action.payload){
         setResponse('Error receiving response from api');
+      } else if (!action.payload['data']){
+          setResponse('Error receiving response from api, no data');
       } else if ('error' in action.payload) {
         setResponse('Error uploading file.' + action.payload['error']);
       } else if ('data' in action.payload) {
