@@ -21,9 +21,7 @@ const visionText = async (fileName, callBack) => {
   const [result] = await client.documentTextDetection(fileName);
   //console.log(detections.fullTextAnnotation.pages[0].blocks[0].paragraphs[0].words[0].symbols[0].text)
 
-  const detections = result.textAnnotations;
-
-  let data = detections.map(text => (
+  let data = await result.textAnnotations.map(text => (
     {
       "text": text.description,
       "bounds": text.boundingPoly.vertices.map(vertex => ({
@@ -32,6 +30,8 @@ const visionText = async (fileName, callBack) => {
       }))
     }
   ));
+  console.log(data)
+
   await callBack(data)
   console.log('vision called')
 }

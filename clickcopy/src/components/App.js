@@ -50,7 +50,7 @@ const App = () => {
   //  return <p key={i}>{item}</p>;
   //});
   const handleTextClick = (text) => {
-    const map = [',', ',0\n']
+    const map = [',', ',']
 
     setTextAreaValue(textAreaValue + text + map[next])
 
