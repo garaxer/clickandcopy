@@ -50,31 +50,44 @@ const Uploader = (props) => {
   const { parentDispatch } = props;
 
   const [response, setResponse] = useState('')
+  const [waiting, setWaiting] = useState(false)
 
-  const dispatch = (action) => {
-    console.log(action.payload)
-    if ('error' in action.payload) {
-      setResponse('Error uploading file.' + action.payload['error']);
-    } else if ('data' in action.payload) {
-      setResponse('valid');
-      parentDispatch(
-        {
-          url: action.payload['url'],
-          data: action.payload['data']
-        }
-      )
-    } else {
-      setResponse('Error receiving response from api');
-    }
-  }
+
+
 
   const onDrop = useCallback(acceptedFiles => {
     // Do something with the files
     //acceptedFiles[0] = 'file'`
-    console.log(acceptedFiles[0].name)
+    if (acceptedFiles){console.log(acceptedFiles[0].name)}
+    setWaiting(true)
 
-    uploadPlan(acceptedFiles[0])(dispatch)
-  }, [])
+    const dispatch = (action) => {
+      console.log(action.payload)
+      if (!action.payload){
+        setResponse('Error receiving response from api');
+      } else if ('error' in action.payload) {
+        setResponse('Error uploading file.' + action.payload['error']);
+      } else if ('data' in action.payload) {
+        setResponse('valid');
+        parentDispatch(
+          {
+            url: action.payload['url'],
+            data: action.payload['data']
+          }
+        )
+        setWaiting(false)
+      } else {
+        setResponse('Error receiving response from api');
+      }
+    }
+
+    try {
+      uploadPlan(acceptedFiles[0])(dispatch)
+    } catch (error) {
+      setResponse('Error receiving response from api');
+    }
+    
+  }, [parentDispatch])
 
   //const refreshClick = () => {
   //  window.location.reload();
@@ -113,6 +126,7 @@ const Uploader = (props) => {
       <ul>
           {rejectedFilesItems}
       </ul>
+      {waiting ? <p>Please Wait</p> : ''}
     </div>
   );
 }

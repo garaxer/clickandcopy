@@ -46,6 +46,14 @@ const App = () => {
   /* Gets called upon filedupload, only one dispatch in this app so we aren't filtering by payload type */
   const dispatch = ({url, data}) =>{
     console.log(url, data)
+    const [, ...textData] = data
+    console.log('data')
+
+    console.log(data)
+    console.log(textData)
+
+    setImageUrl(url)
+    setTextData(textData)
   }
 
 

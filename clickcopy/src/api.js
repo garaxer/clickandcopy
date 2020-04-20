@@ -10,9 +10,12 @@ export const uploadPlan = (file) => async dispatch => {
     headers: {
       'Content-Type': 'multipart/form-data'
     }
+  }).catch((error) => {
+    console.error('Error:', error);
+    dispatch({ type: 'PLAN_UPLOAD', payload: error });
   });
 
-  dispatch({ type: 'PLAN_UPLOAD', payload: response });
+  dispatch({ type: 'PLAN_UPLOAD', payload: response.data });
 }
 
 export const uploadPlanOld = (file) => dispatch => {
