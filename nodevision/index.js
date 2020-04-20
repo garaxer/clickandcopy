@@ -36,6 +36,7 @@ app.post('/', cors(), function(req, res, next) {
 		keyFilename: path.join(__dirname, 'PlanCapture.json'),
   });
   
+  //try {
   async function uploadFile(file, folder, callBack) {
 
     const bucket = storage.bucket(config.google.bucket)
@@ -68,7 +69,7 @@ app.post('/', cors(), function(req, res, next) {
     console.log(req.files)
     let files = req.files
     if (!files){
-      return res.end('{"error": "Error uploading file. No file received."}');
+      return res.end('{"error": "Error uploading file. No file(s) received."}');
     }
     //for (let file in files) {
     //  console.log('working')
@@ -94,13 +95,16 @@ app.post('/', cors(), function(req, res, next) {
      
 
     if(err) {
-        return res.end(`"error": "Error uploading file."  ${err}`);
+        return res.end(`"error": "Error uploading file. "  ${err}`);
     }
 
 
 
     //res.end("File is uploaded");
   });
+//} catch (err) {
+//  res.send(err)
+//}
 
 });
 
