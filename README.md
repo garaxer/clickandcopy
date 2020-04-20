@@ -4,7 +4,9 @@
 
 1. cd clickcopy
 
-2. npm start 
+2. export API_URL='http://localhost:8080/'
+
+3. npm start 
 
 
 ### Run the server
