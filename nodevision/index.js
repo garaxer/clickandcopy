@@ -12,7 +12,7 @@ const cors = require('cors');
 
 // Imports the Google Cloud client library.
 
-
+app.listen(config.server.port, e => console.log(`listening ${config.server.port}: ${e || 'ok'}`))
 
 const app = express()
 app.use(express.static(__dirname));

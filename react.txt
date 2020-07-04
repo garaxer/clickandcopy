@@ -1,3 +1,6 @@
 1. Get node server working that returns a response like .
 2. react. First hard code it the image display in.
 3. upload button
+
+
+Build and host in python flask or express.
