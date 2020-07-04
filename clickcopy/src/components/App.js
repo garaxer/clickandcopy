@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import ImageView from "./ImageView";
 import Uploader from "./Uploader";
 
@@ -41,7 +41,7 @@ const App = () => {
   const [textColour, setTextColour] = useState("tomato");
 
   const [imageUrl, setImageUrl] = useState(testimageurl);
-  const [textData, setTextData] = useState(testData);
+  const [textData, setTextData] = useState(null);
 
   const [textAreaValue, setTextAreaValue] = useState("");
   const [next, setNext] = useState(0);
@@ -56,6 +56,10 @@ const App = () => {
 
     setNext(next === 1 ? 0 : next + 1);
   };
+
+  useEffect(() => {
+    testData(setTextData);
+  }, [setTextData]);
 
   /* Gets called upon filedupload, only one dispatch in this app so we aren't filtering by payload type */
   const dispatch = ({ url, data }) => {
