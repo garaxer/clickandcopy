@@ -1,13 +1,25 @@
 import os
 import webbrowser
-from flask import Flask, send_from_directory, request
-from src.visionParagraghReader import render_doc_text
+from flask import Flask, send_from_directory, request, jsonify
+#from src.visionParagraghReader import render_doc_text
+from src.tesseractReader import render_doc_text
+
 from werkzeug.utils import secure_filename
+from flask_cors import CORS
+
 app = Flask(__name__, static_folder='build')
+
+#app.config['TESTING'] = True
+# print(app.config['API_URL'])
+app.config['API_URL'] = "http://127.0.0.1:5000/planUpload"
+print(app.config['API_URL'])
+# export API_URL=http://127.0.0.1:5000/planUpload
+# http://127.0.0.1:5000/planUpload
+CORS(app, resources={r'/*': {'origins': '*'}})
 
 
 @app.route('/planUpload', methods=['POST'])
-def show_results():
+def upload():
     print('hello')
     # Save file inside build.
 
@@ -20,8 +32,21 @@ def show_results():
     print('filename')
     filePath = os.path.join('build', filename)
     f.save(filePath)
-    render_doc_text('filein', 'fileout')
-    return 'success'
+    print(filename)
+
+    print(filePath)
+    try:
+        data = render_doc_text(filePath, fileout=0)
+        print('success')
+        return jsonify({'data': data, 'url': filename})
+    except:
+        return jsonify({'error': 'OCRing plan failed'})
+
+
+@app.route('/test', methods=['GET'])
+def show_results():
+    print('hello')
+    return jsonify({'data': 'success'})
 
 
 @app.route('/', defaults={'path': ''})
@@ -34,6 +59,6 @@ def serve(path):
 
 
 if __name__ == '__main__':
-    webbrowser.open("http://127.0.0.1:5000/")
+    # webbrowser.open("http://127.0.0.1:5000/")
 
     app.run(use_reloader=True, port=5000, threaded=True)
