@@ -1,22 +1,30 @@
 import os
 import webbrowser
 from flask import Flask, send_from_directory, request, jsonify
-#from src.visionParagraghReader import render_doc_text
+# from src.visionParagraghReader import render_doc_text
 from src.tesseractReader import render_doc_text
 
 from werkzeug.utils import secure_filename
 from flask_cors import CORS
+import cv2
 
 app = Flask(__name__, static_folder='build')
 
-#app.config['TESTING'] = True
-# print(app.config['API_URL'])
 app.config['API_URL'] = "http://127.0.0.1:5000/planUpload"
 print(app.config['API_URL'])
 # export API_URL=http://127.0.0.1:5000/planUpload
 # http://127.0.0.1:5000/planUpload
 CORS(app, resources={r'/*': {'origins': '*'}})
 
+
+def tifftoPng(imageLocation):
+    Images = []
+    multiBoolean, Images = cv2.imreadmulti(imageLocation, Images)
+    imageNames = []
+    for i, image in enumerate(Images):
+        cv2.imwrite(f'{imageLocation}_{i}.png', image)
+        imageNames = [*imageNames, f'{imageLocation}_{i}.png']
+    return imageNames
 
 @app.route('/planUpload', methods=['POST'])
 def upload():
@@ -33,8 +41,17 @@ def upload():
     filePath = os.path.join('build', filename)
     f.save(filePath)
     print(filename)
-
     print(filePath)
+
+    if filePath.split('.')[-1] == 'tif':
+        print('tif uploaded')
+        filePath = tifftoPng(filePath)[0]
+        filename = os.path.basename(filePath)
+        print(filePath)
+        print(filename)
+
+
+
     try:
         data = render_doc_text(filePath, fileout=0)
         print('success')
